@@ -18,7 +18,7 @@ pip install -r requirements.txt
 ### 3️⃣ Run the Application
 
 ```sh
-uvicorn fastapi_app:app --host 127.0.0.1 --port 8000 --reload
+uvicorn fastapi_app:app --host 127.0.0.1 --port 5000 --reload
 ```
 
 ---
@@ -33,7 +33,7 @@ curl -X POST http://127.0.0.1:5000/login \
      -d '{"username": "user1", "password": "password123"}'
 ```
 
-### 🌐 Using Postman
+###  Using Postman
 
 1. Open **Postman**.
 2. Set **Method** to `POST`.
