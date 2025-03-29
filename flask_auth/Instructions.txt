@@ -1,0 +1,38 @@
+Flask Authentication API
+
+Setup Instructions:
+
+1. Create a Virtual Environment:
+   python -m venv env
+   source env/bin/activate  (On Windows: env\Scripts\activate)
+
+2. Install Dependencies:
+   pip install -r requirements.txt
+
+3. Run the Application:
+   python flask_app.py
+
+Testing the API:
+
+Using curl:
+   curl -X POST http://127.0.0.1:5000/login -H "Content-Type: application/json" -d '{"username": "user1", "password": "password123"}'
+
+Using Postman:
+1. Open Postman.
+2. Set method to POST.
+3. Enter URL: http://127.0.0.1:5000/login
+4. Go to Body -> raw -> JSON.
+5. Enter the following JSON:
+   {
+       "username": "user1",
+       "password": "password123"
+   }
+6. Click Send and check the response.
+
+Expected Responses:
+200 -> { "message": "Login successful" }
+400 -> { "error": "Missing username or password" }
+401 -> { "error": "Invalid credentials" }
+
+License:
+This project is open-source under the MIT License.
