@@ -18,7 +18,7 @@ pip install -r requirements.txt
 ### 3️⃣ Run the Application
 
 ```sh
-python flask_app.py
+uvicorn fastapi_app:app --host 127.0.0.1 --port 8000 --reload
 ```
 
 ---
